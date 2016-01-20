@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Coding Test</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap.transparitrade.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Coding Test</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div ng-view></div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="http://code.highcharts.com/highcharts.src.js"></script>
+  <script src="bower_components/highcharts-ng/dist/highcharts-ng.min.js"></script>
+  <script src="app.js"></script>
+  <script src="api_urls.js"></script>
+  <script src="components/dashboard/dashboardController.js"></script>
+  <script src="components/dashboard/dashboardService.js"></script>
+  <script src="components/login/loginController.js"></script>
+  <script src="components/login/loginService.js"></script>
+</body>
+</html>

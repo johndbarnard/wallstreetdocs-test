@@ -1,0 +1,7 @@
+<h1>Dashboard</h1>
+
+<pre class="pre-scrollable" ng-hide="!health">
+  <code>{{health|json}}</code>
+</pre>
+
+<highchart ng-hide="!health" id="diskspaceChart" config="diskspaceChart"></highchart>

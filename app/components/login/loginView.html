@@ -1,0 +1,34 @@
+<div ng-controller="LoginCtrl">
+
+  <div class="alert alert-warning" ng-hide="!message" role="alert">{{message}}</div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Sign in to continue</h3>
+    </div>
+    <div class="panel-body panel-body--white">
+      <form ng-submit="submit()">
+
+        <h1 class="text-center text-muted"><div class="glyphicon glyphicon-user"></div></h1>
+
+        <div class="input-group form-group">
+          <span class="input-group-addon" id="sizing-addon1">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+          </span>
+          <input ng-model="user.username" type="text" class="form-control" name="user" placeholder="Username" aria-describedby="sizing-addon1">
+        </div>
+
+        <div class="input-group form-group">
+          <span class="input-group-addon" id="sizing-addon1">
+            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+          </span>
+          <input ng-model="user.password" type="password" class="form-control" name="pass" placeholder="Password" aria-describedby="sizing-addon1">
+        </div>
+
+        <input type="submit" class="btn btn-primary btn-block" value="Sign in" />
+      </form>
+    </div>
+    <div class="panel-footer"></div>
+  </div>
+
+</div>
